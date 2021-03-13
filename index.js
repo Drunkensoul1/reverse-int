@@ -1,9 +1,7 @@
 function reverse(num) {
-    let dig = Math.abs(num);  
-    let number = String(dig);
-    let j = '';
-   for (i=0; i < number.length; i++) {
-       j = `${number[i]}${j}`;  
+    let number = Math.abs(num);
+    let arr = number.toString().split("");
+    let j = arr.reverse().join("");
+    return j;
 }
-return j; 
-}
+console.log(reverse(-321));
